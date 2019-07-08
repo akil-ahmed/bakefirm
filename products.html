@@ -96,16 +96,34 @@
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var myObj = JSON.parse(this.responseText);
-                var news = document.getElementsByClassName("product_main")[0];
+                var news = document.querySelector(".product_main");
                 var items = myObj.data;
+                // console.log(items.map(id))
                 // console.log(items[0].name)
-                for (var i = 0; i < items.length; i++) {
-                    var h5 = document.createElement("h5");
-                    h5.innerHTML = items[i].name;
-                    news.appendChild(h5);
-                    var p = document.createElement("p");
-                    p.innerHTML = items[i].price;
-                    news.appendChild(p);
+                // function template(items) {
+                //     return `${items.map(function (data) {
+                //         return
+                //         news.innerHTML = `<div class="product">
+                //             <img class="image_show img_fluid" src = "./images/product_image.jpeg" alt = ""/>
+                //             <div class="product_info">
+                //                 <div class="product_name">${data[i].name}</div>
+                //                 <div class="product_price">${data[i].price}</div>
+                //             </div>
+                //         </div> `
+                //     }).join('')}`
+
+                // }
+                // window.onload = template;
+                for (let i = 0; i < items.length; i++) {
+                    console.log(items[i].name)
+                    news.innerHTML =
+                        `<div class="product">
+                        <img class="image_show img_fluid" src = "" alt = ""/>
+                        <div class="product_info">
+                            <div class="product_name">${items[i].name}</div>
+                            <div class="product_price">${items[i].price}</div>
+                        </div>
+                     </div> `
                 }
             }
         };

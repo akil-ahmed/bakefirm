@@ -17,9 +17,9 @@
         {
             "id": 3,
             "category": "cake",
-            "name": "Chocolate Cake",
+            "name": "Chocolate",
             "img": "./images/cake.png",
-            "price": 1200
+            "price": 1300
         },
         {
             "id": 4,
