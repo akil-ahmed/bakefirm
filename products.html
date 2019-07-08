@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c5cd1fd4f0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <nav id="navbar" class="navbar navbar-expand-lg">
+
+            <button class="navbar-toggler justify-content-end menu_button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./products.html">Products<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="curtains_main">
+            <div data-type="Group" data-name="" class="curtain_grid">
+                <svg data-type="Ellipse" data-name="Ellipse 7" class="circles">
+                    <ellipse class="circle" rx="10%" ry="20%" cx="29.5" cy="38.5">
+                    </ellipse>
+                </svg>
+            </div>
+        </div>
+        <div class="product_main row">
+            <div class="product">
+                <img class="image_show" src="./images/product_image.jpeg" alt="">
+                <div class="product_info">
+                    <div class="product_name">chocolate cake</div>
+                    <div class="product_price">1200</div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="image_show img_fluid" src="./images/product_image.jpeg" alt="">
+                <div class="product_info">
+                    <div class="product_name">chocolate cake</div>
+                    <div class="product_price">1200</div>
+                </div>
+            </div>
+            <div class="product">
+                <img class="image_show" src="./images/product_image.jpeg" alt="">
+                <div class="product_info">
+                    <div class="product_name">chocolate cake</div>
+                    <div class="product_price">1200</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"
+        integrity="sha256-oA/lsZCgEPkbv/byAkeXSTEZTsGOPZCrtbyFBHmcGKM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function multiplyNode(node, count, deep) {
+            for (var i = 0, copy; i < count - 1; i++) {
+                copy = node.cloneNode(deep);
+                node.parentNode.insertBefore(copy, node);
+            }
+        }
+        multiplyNode(document.querySelector('.curtain_grid'), 100, true);
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myObj = JSON.parse(this.responseText);
+                var news = document.getElementsByClassName("product_main")[0];
+                var items = myObj.data;
+                // console.log(items[0].name)
+                for (var i = 0; i < items.length; i++) {
+                    var h5 = document.createElement("h5");
+                    h5.innerHTML = items[i].name;
+                    news.appendChild(h5);
+                    var p = document.createElement("p");
+                    p.innerHTML = items[i].price;
+                    news.appendChild(p);
+                }
+            }
+        };
+        // console.log(myObj.data[0].name)
+
+        xmlhttp.open("GET", "./data/data.json", true);
+        xmlhttp.send();
+    </script>
+</body>
+
+</html>

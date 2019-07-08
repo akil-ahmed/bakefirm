@@ -1,0 +1,306 @@
+$secondary-red: rgba(227,28,28,1);
+$primary-yellow: rgba(255,211,58,1);
+$normal-font: 'Montserrat', sans-serif;
+$cursive-font: 'Pinyon Script', cursive;
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 200;
+	font-family: $normal-font;
+	font-style: italic;
+	// font-weight: bold;
+	line-height: 40px;
+	h3 {
+		font-family: $cursive-font;
+		font-size: 48px;
+		font-style: normal;
+	}
+	h4 {
+		font-family: $cursive-font;
+		font-size: 40px;
+
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Dancing Script', cursive;
+}
+.navbar {
+	background-color: $primary-yellow;
+}
+.nav-link {
+	color: $secondary-red;
+	font-family: $normal-font;
+	font-style: normal;
+	font-size: 22px;
+	padding-left: 13px !important;
+	padding-right: 13px !important;
+}
+.curtain_grid {
+	opacity: 1;
+	position: relative;
+	width: 59px;
+	height: 77px;
+	margin: 1px;
+	top: -37px;
+	z-index: -1;
+	
+}
+.circles {
+	opacity: 1;
+	// filter: drop-shadow(1px 1px 5px $primary-yellow);
+	fill: $primary-yellow;
+}
+.circle {
+	width: 89px;
+	height: 107px;
+	left: 0px;
+	top: 0px;
+}
+.curtains_main {
+	display: flex;
+	direction: row;
+}
+.navbar-toggler-icon{
+	background-color: $secondary-red;
+}
+.menu_button {
+	position: relative;
+	left: 90%;
+}
+.collapse {
+	background-color: $primary-yellow;
+}
+.menu_button {
+	i {
+		font-size: 30px;
+		color: $secondary-red;
+	}
+	
+}
+
+.jumbo img {
+	position: relative;
+	bottom: 120px;
+	z-index: -2;
+}
+.content {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+}
+.cake_images {
+	height: 400px;
+	.image_two {
+		position: relative;
+		left: 180px;
+		bottom: 160px;
+	}
+	.image_three {
+		position: relative;
+		bottom: 330px;
+	}
+	.image_show {
+		width: 420px;
+		height: 280px;
+	}
+}
+.cake_info {
+
+	text-align: center;
+}
+.image_show_popular {
+	width: 420px;
+	height: 280px;
+}
+.popular_info {
+	text-align: center;
+}
+
+.popular {
+	
+	text-align: center;
+}
+// .popular_product {
+// 	display: fl
+// }
+.popular_name {
+	font-size: 20px
+}
+
+@media only screen and (max-width: 970px) {
+	.cake_info {
+		position: relative;
+		top: 85px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.cake_info {
+		position: relative;
+		top: 85px;
+	}
+	.cake_images {
+		
+		height: 200px;
+		position: relative;
+		.image_show {
+			width: 300px;
+			height: 200px;
+		}
+		.image_two {
+			position: relative;
+			left: 160px;
+			bottom: 160px;
+		}
+		.image_three {
+			position: relative;
+			left: 40px;
+			bottom: 280px;
+		}
+		.image_one {
+			position: relative;
+			left: 40px;
+			bottom: 40px
+		}
+	}	
+	.image_show_popular {
+		width: 270px;
+		height: 180px;
+	}
+}
+.para {
+	margin-bottom: 80px
+}
+@media only screen and (max-width: 400px) {
+	.cake_info {
+		// position: relative;
+		// top: 85px;
+		// padding-bottom: 300px;
+		// p {
+		// 	margin-botpx;
+		// }
+	}
+	.cake_images {
+		position: relative;
+		height: 200px;
+		right: 50px;
+		.image_show {
+			width: 300px;
+			height: 200px;
+		}
+		.image_two {
+			position: relative;
+			left: 160px;
+			bottom: 160px;
+		}
+		.image_three {
+			position: relative;
+			left: 40px;
+			bottom: 280px;
+		}
+		.image_one {
+			position: relative;
+			left: 40px;
+			bottom: 40px
+		}
+	}	
+	.circle {
+		width: 10px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	.curtain_grid {
+		position: relative;
+		margin: 1px;
+		top: -40px;
+		z-index: -1;
+	}
+	.navbar {
+		background-color: $primary-yellow;
+	}
+	.jumbo img {
+		position: relative;
+		bottom: 80px;
+		z-index: -2;
+	}
+	
+}
+.testimonials_info {
+	text-align: center;
+	padding-top: 40px;
+}
+.testimonials {
+	display: flex;
+	justify-content: space-around;
+}
+.slider .testimonial {
+	width: 300px ;
+	height: 450px;
+	margin: auto;
+	padding-top: 40px;
+	margin-left: 20px;
+	background-color: $primary-yellow;
+	text-align: center;
+	border-radius: 150px;
+
+	img {
+		border-radius: 50%;
+		margin: auto;
+	}
+	h4 {
+		font-size: 35px;
+		font-family: $cursive-font;
+		margin-top: 30px;
+	}
+	p {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+.product_main {
+	display: flex;
+	justify-content: space-around;
+}
+.product {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: 20px 10px 20px 5px;
+	width: 160px;
+	height: auto;
+	box-shadow: .1px .1px 15px rgb(214, 214, 214);
+	.image_show {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.product_info {
+		margin-top: 12px;
+		padding-left: 10px;
+		font-style: normal;
+	}
+	.product_price {
+		position: relative;
+		bottom: 8px;
+		font-size: 17px;
+		font-family: $normal-font;
+	}
+	.product_name {
+		font-family: $cursive-font;
+		font-size: 25px;
+	}
+}

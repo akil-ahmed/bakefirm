@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  line-height: 40px;
+}
+
+body h3 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 48px;
+  font-style: normal;
+}
+
+body h4 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 40px;
+}
+
+body p {
+  font-size: 20px;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar {
+  background-color: #ffd33a;
+}
+
+.nav-link {
+  color: #e31c1c;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+}
+
+.curtain_grid {
+  opacity: 1;
+  position: relative;
+  width: 59px;
+  height: 77px;
+  margin: 1px;
+  top: -37px;
+  z-index: -1;
+}
+
+.circles {
+  opacity: 1;
+  fill: #ffd33a;
+}
+
+.circle {
+  width: 89px;
+  height: 107px;
+  left: 0px;
+  top: 0px;
+}
+
+.curtains_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+}
+
+.navbar-toggler-icon {
+  background-color: #e31c1c;
+}
+
+.menu_button {
+  position: relative;
+  left: 90%;
+}
+
+.collapse {
+  background-color: #ffd33a;
+}
+
+.menu_button i {
+  font-size: 30px;
+  color: #e31c1c;
+}
+
+.jumbo img {
+  position: relative;
+  bottom: 120px;
+  z-index: -2;
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.cake_images {
+  height: 400px;
+}
+
+.cake_images .image_two {
+  position: relative;
+  left: 180px;
+  bottom: 160px;
+}
+
+.cake_images .image_three {
+  position: relative;
+  bottom: 330px;
+}
+
+.cake_images .image_show {
+  width: 420px;
+  height: 280px;
+}
+
+.cake_info {
+  text-align: center;
+}
+
+.image_show_popular {
+  width: 420px;
+  height: 280px;
+}
+
+.popular_info {
+  text-align: center;
+}
+
+.popular {
+  text-align: center;
+}
+
+.popular_name {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 970px) {
+  .cake_info {
+    position: relative;
+    top: 85px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cake_info {
+    position: relative;
+    top: 85px;
+  }
+  .cake_images {
+    height: 200px;
+    position: relative;
+  }
+  .cake_images .image_show {
+    width: 300px;
+    height: 200px;
+  }
+  .cake_images .image_two {
+    position: relative;
+    left: 160px;
+    bottom: 160px;
+  }
+  .cake_images .image_three {
+    position: relative;
+    left: 40px;
+    bottom: 280px;
+  }
+  .cake_images .image_one {
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+  }
+  .image_show_popular {
+    width: 270px;
+    height: 180px;
+  }
+}
+
+.para {
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+  .cake_images {
+    position: relative;
+    height: 200px;
+    right: 50px;
+  }
+  .cake_images .image_show {
+    width: 300px;
+    height: 200px;
+  }
+  .cake_images .image_two {
+    position: relative;
+    left: 160px;
+    bottom: 160px;
+  }
+  .cake_images .image_three {
+    position: relative;
+    left: 40px;
+    bottom: 280px;
+  }
+  .cake_images .image_one {
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+  }
+  .circle {
+    width: 10px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+  }
+  .curtain_grid {
+    position: relative;
+    margin: 1px;
+    top: -40px;
+    z-index: -1;
+  }
+  .navbar {
+    background-color: #ffd33a;
+  }
+  .jumbo img {
+    position: relative;
+    bottom: 80px;
+    z-index: -2;
+  }
+}
+
+.testimonials_info {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider .testimonial {
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  padding-top: 40px;
+  margin-left: 20px;
+  background-color: #ffd33a;
+  text-align: center;
+  border-radius: 150px;
+}
+
+.slider .testimonial img {
+  border-radius: 50%;
+  margin: auto;
+}
+
+.slider .testimonial h4 {
+  font-size: 35px;
+  font-family: "Pinyon Script", cursive;
+  margin-top: 30px;
+}
+
+.slider .testimonial p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.product_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.product {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 20px 10px 20px 5px;
+  width: 160px;
+  height: auto;
+  -webkit-box-shadow: 0.1px 0.1px 15px #d6d6d6;
+          box-shadow: 0.1px 0.1px 15px #d6d6d6;
+}
+
+.product .image_show {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.product .product_info {
+  margin-top: 12px;
+  padding-left: 10px;
+  font-style: normal;
+}
+
+.product .product_price {
+  position: relative;
+  bottom: 8px;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product .product_name {
+  font-family: "Pinyon Script", cursive;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */

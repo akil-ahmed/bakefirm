@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "category": "cake",
+            "img": "./images/cake.png",
+            "name": "Chocolate Cake",
+            "price": 1200
+        },
+        {
+            "id": 2,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 3,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 4,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 5,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 6,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 7,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "price": 1200
+        },
+        {
+            "id": 8,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "price": 1200
+        },
+        {
+            "id": 9,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 10,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 11,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        },
+        {
+            "id": 12,
+            "category": "cake",
+            "name": "Chocolate Cake",
+            "img": "./images/cake.png",
+            "price": 1200
+        }
+    ]
+}
