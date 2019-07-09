@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="product_main row">
-            <div class="product">
+            <!-- <div class="product">
                 <img class="image_show" src="./images/product_image.jpeg" alt="">
                 <div class="product_info">
                     <div class="product_name">chocolate cake</div>
@@ -68,7 +68,7 @@
                     <div class="product_name">chocolate cake</div>
                     <div class="product_price">1200</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -96,41 +96,26 @@
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var myObj = JSON.parse(this.responseText);
-                var news = document.querySelector(".product_main");
+                var productPage = document.getElementsByClassName("product_main")[0];
                 var items = myObj.data;
-                // console.log(items.map(id))
-                // console.log(items[0].name)
-                // function template(items) {
-                //     return `${items.map(function (data) {
-                //         return
-                //         news.innerHTML = `<div class="product">
-                //             <img class="image_show img_fluid" src = "./images/product_image.jpeg" alt = ""/>
-                //             <div class="product_info">
-                //                 <div class="product_name">${data[i].name}</div>
-                //                 <div class="product_price">${data[i].price}</div>
-                //             </div>
-                //         </div> `
-                //     }).join('')}`
+                var products;
+                products = myObj.data.map(function (data) {
+                    return `<div class="product">
+                            <img class="image_show img_fluid" src = "./images/product_image.jpeg" alt = ""/>
+                            <div class="product_info">
+                                <div class="product_name">${data.name}</div>
+                                <div class="product_price">${data.price}</div>
+                            </div>
+                        </div> `
 
-                // }
-                // window.onload = template;
-                for (let i = 0; i < items.length; i++) {
-                    console.log(items[i].name)
-                    news.innerHTML =
-                        `<div class="product">
-                        <img class="image_show img_fluid" src = "" alt = ""/>
-                        <div class="product_info">
-                            <div class="product_name">${items[i].name}</div>
-                            <div class="product_price">${items[i].price}</div>
-                        </div>
-                     </div> `
-                }
+                }).join('')
+                productPage.innerHTML = products
             }
         };
-        // console.log(myObj.data[0].name)
-
         xmlhttp.open("GET", "./data/data.json", true);
         xmlhttp.send();
+
+
     </script>
 </body>
 
