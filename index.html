@@ -20,10 +20,11 @@
 		<div class="header">
 			<nav id="navbar" class="navbar navbar-expand-lg">
 
-				<button class="navbar-toggler justify-content-end menu_button" type="button" data-toggle="collapse"
+				<a class="navbar-brand" href="./index.html"><img src="./images/logo.png" alt="" width="70px"></a>
+				<button class="navbar-toggler menu_button" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
-					<i class="fas fa-bars"></i>
+					<span><i class="fas fa-bars"></i></span>
 				</button>
 
 				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -33,11 +34,12 @@
 									class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Us</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="#">Contact Us</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+
 					</ul>
 				</div>
 			</nav>
@@ -53,6 +55,9 @@
 				<img src="images/jumbotron.png" class="img-fluid" alt="Responsive image">
 			</div>
 		</div>
+
+
+
 
 		<div class="content row">
 			<div class="cake_images col-lg-6 col-md-8 col-sm-12 justify-content-center">
@@ -218,6 +223,16 @@
 				]
 			});
 		})
+		$("#exampleModal").modal("show");
+		// $('.modal').click(function (event) {
+		// 	event.preventDefault();
+		// 	// var e = $(this);
+		// 	// var title = e.data('title');
+		// 	// var body = e.data('value');
+
+		// 	// $('#modal-title').html(title);
+		// 	// $('#modal-body').html(body);
+		// });
 	</script>
 </body>
 
