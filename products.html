@@ -4,7 +4,7 @@
 <head lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Single Page App Without A Framework</title>
     <script src="https://kit.fontawesome.com/c5cd1fd4f0.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -55,22 +55,30 @@
             <div class="all-products page">
                 <ul class="product_main row">
                     <script id="products-template" type="x-handlebars-template">​
-					{{#each this}}
-						<li class = "product" data-index="{{id}}">
-                            <div class = "product_image"><a href="#" class="product-photo"><img class = "image_show" src="{{img}}"  alt="{{name}}"/></a></div>
-                            
-                            <div class="product_info">
-                                <h2 class="product_name">{{name}}</h2>
-                                <!-- <button>Buy Now!</button> -->
-                                <p class="product-price">{{price}}$</p>
-                            </div>
-							<!-- <div class="highlight"></div> -->
-						</li>
-					{{/each}}
-				</script>
+                        {{#each this}}
+                        <div>
+                            <li class = "product" data-index="{{id}}">
+                                
+                                <div class = "product_image"><a href="#" class="product-photo"><img class = "image_show" src="{{img}}"  alt="{{name}}"/></a></div>
+                                
+                                <div class="product_info">
+                                    <h2 class="product_name">{{name}}</h2>
+                                    <!-- <button>Buy Now!</button> -->
+                                    <p class="product-price">{{price}}$</p>
+                                </div>
+                                <!-- <div class="highlight"></div> -->
+                            </li>
+                        </div>
+                        {{/each}}
+				    </script>
                 </ul>
 
             </div>
+            <form action="https://formspree.io/callmesiddique@gmail.com" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="submit" value="Send">
+            </form>
 
 
             <div class="single-product page">

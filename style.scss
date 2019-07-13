@@ -1,3 +1,8 @@
+$secondary_red: #e31c1c;
+$primary_yellow: #ffd33a;
+
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -236,8 +241,7 @@ body {
   }
   
   .product_image {
-	  width: 180px;
-	//   min-height: 150px;
+	  width: 100%;
   }
   
   .testimonials_info {
@@ -287,20 +291,18 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	display: -webkit-flex; /* Safari */
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */   
-  flex-wrap: wrap;
-	-ms-flex-pack: distribute;
-		justify-content: space-around;
+	flex-wrap: flex;
+	justify-content: center;
+	display: -webkit-flex;
   }
   
   .product {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	margin: 20px 10px 20px 5px;
-	min-width: 180px !important;
-	height: 250px !important;
-	height: auto;
+	margin: 10px 20px 10px 20px;
+	min-width: 160px !important;
+	max-width: 160px;
+	height: auto !important;
 	-webkit-box-shadow: 0.1px 0.1px 15px #d6d6d6;
 			box-shadow: 0.1px 0.1px 15px #d6d6d6;
   }
@@ -505,16 +507,10 @@ body {
   
   .main-content{
   box-sizing: border-box;
-  /* text-align: center; */
-  /* margin: 125px auto 60px; */
-  padding: 0 40px;
+  padding: 0 0px;
   }
   
-  /* .main-content h3{
-  font-size: 28px;
-  color:  #5a96b9;
-  padding-bottom: 20px;
-  } */
+  
   
   @media (max-width: 600px){
   
@@ -524,19 +520,7 @@ body {
   }
   
   }
-  
-  
-  /*-------------------
-  All Products Page
-  --------------------*/
-  
-  /* .all-products h3{
-  opacity: 0;
-  }
-  /* Making the list responsive */
-  
-  
-  
+
   /*---------------------------
   Single Product Page
   ----------------------------*/
@@ -550,9 +534,12 @@ body {
   width: 100%;
   position: fixed;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
   top: 0;
   left: 0;
-  background-color: #f0aeb7;
+  background-color: rgb(48, 47, 47);
+  opacity: 0.9;
   transition: 0.6s;
   z-index: 100;
   }
@@ -563,10 +550,10 @@ body {
   
   .preview-large{
   box-sizing: border-box;
-  width: 600px;
-  height: 550px;
+  width: 50%;
+  height: auto;
   position: fixed;
-  /* left: 50%; */
+  left: 25%;
   /* margin-left: 135px; */
   
   top: 50%;
@@ -589,19 +576,21 @@ body {
   }
   
   .preview-large h3{
-  margin-top: 20px;
+  margin-top: px;
+  background-color: $primary_yellow;
   }
   
   .preview-large img{
   width: 100%;
-  height: 280px;
+  height:auto;
   border-bottom: 3px solid #efefef;
   border-radius: 5px 5px 0 0;
   }
   
   .preview-large p{
+	  font-size: 40px;
   line-height: 23px;
-  padding: 50px 45px;
+  padding: 10px 10px;
   }
   
   .close{
@@ -610,7 +599,7 @@ body {
   top: 15px;
   
   font-size: 28px;
-  color: #555;
+//   color: #555;
   cursor: pointer;
   }
   
