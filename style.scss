@@ -1,52 +1,50 @@
-$secondary-red: rgba(227,28,28,1);
-$primary-yellow: rgba(255,211,58,1);
-$normal-font: 'Montserrat', sans-serif;
-$cursive-font: 'Pinyon Script', cursive;
-
-
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
 	font-weight: 200;
-	font-family: $normal-font;
+	font-family: "Montserrat", sans-serif;
 	font-style: italic;
-	// font-weight: bold;
 	line-height: 40px;
-	h3 {
-		font-family: $cursive-font;
-		font-size: 48px;
-		font-style: normal;
-	}
-	h4 {
-		font-family: $cursive-font;
-		font-size: 40px;
-
-	}
-	p {
-		font-size: 20px;
-	}
-}
-
-.main {
+  }
+  
+  body h3 {
+	font-family: "Pinyon Script", cursive;
+	font-size: 48px;
+	font-style: normal;
+  }
+  
+  body h4 {
+	font-family: "Pinyon Script", cursive;
+	font-size: 40px;
+  }
+  
+  body p {
+	font-size: 20px;
+  }
+  
+  .main {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
 	font-family: 'Dancing Script', cursive;
-}
-.navbar {
-	background-color: $primary-yellow;
-}
-.nav-link {
-	color: $secondary-red;
-	font-family: $normal-font;
+  }
+  
+  .navbar {
+	background-color: #ffd33a;
+  }
+  
+  .nav-link {
+	color: #e31c1c;
+	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-size: 22px;
 	padding-left: 13px !important;
 	padding-right: 13px !important;
-}
-.curtain_grid {
+  }
+  
+  .curtain_grid {
 	opacity: 1;
 	position: relative;
 	width: 59px;
@@ -54,334 +52,362 @@ body {
 	margin: 1px;
 	top: -37px;
 	z-index: -1;
-	
-}
-.circles {
+  }
+  
+  .circles {
 	opacity: 1;
-	// filter: drop-shadow(1px 1px 5px $primary-yellow);
-	fill: $primary-yellow;
-}
-.circle {
+	fill: #ffd33a;
+  }
+  
+  .circle {
 	width: 89px;
 	height: 107px;
 	left: 0px;
 	top: 0px;
-}
-.curtains_main {
+  }
+  
+  .curtains_main {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	direction: row;
-}
-.navbar-toggler-icon{
-	background-color: $secondary-red;
-}
-
-.collapse {
-	background-color: $primary-yellow;
-}
-.menu_button {
-	i {
-		font-size: 30px;
-		color: $secondary-red;
-	}
-	
-}
-
-.jumbo img {
+  }
+  
+  .navbar-toggler-icon {
+	background-color: #e31c1c;
+  }
+  
+  .collapse {
+	background-color: #ffd33a;
+  }
+  
+  .menu_button i {
+	font-size: 30px;
+	color: #e31c1c;
+  }
+  
+  .jumbo img {
 	position: relative;
 	bottom: 120px;
 	z-index: -2;
-}
-.content {
+  }
+  
+  .content {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+		justify-content: space-around;
 	margin-bottom: 70px;
-}
-.cake_images {
+  }
+  
+  .cake_images {
 	height: 400px;
-	.image_two {
-		position: relative;
-		left: 180px;
-		bottom: 160px;
-	}
-	.image_three {
-		position: relative;
-		bottom: 330px;
-	}
-	.image_show {
-		width: 420px;
-		height: 280px;
-	}
-}
-.cake_info {
-
-	text-align: center;
-}
-.image_show_popular {
+  }
+  
+  .cake_images .image_two {
+	position: relative;
+	left: 180px;
+	bottom: 160px;
+  }
+  
+  .cake_images .image_three {
+	position: relative;
+	bottom: 330px;
+  }
+  
+  .cake_images .image_show {
 	width: 420px;
 	height: 280px;
-}
-.popular_info {
+  }
+  
+  .cake_info {
 	text-align: center;
-}
-
-.popular {
-	
+  }
+  
+  .image_show_popular {
+	width: 420px;
+	height: 280px;
+  }
+  
+  .popular_info {
 	text-align: center;
-}
-// .popular_product {
-// 	display: fl
-// }
-.popular_name {
-	font-size: 20px
-}
-
-@media only screen and (max-width: 970px) {
+  }
+  
+  .popular {
+	text-align: center;
+  }
+  
+  .popular_name {
+	font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 970px) {
 	.cake_info {
-		position: relative;
-		top: 85px;
+	  position: relative;
+	  top: 85px;
 	}
-}
-
-@media only screen and (max-width: 767px) {
+  }
+  
+  @media only screen and (max-width: 767px) {
 	.cake_info {
-		position: relative;
-		top: 85px;
+	  position: relative;
+	  top: 85px;
 	}
 	.cake_images {
-		
-		height: 200px;
-		position: relative;
-		.image_show {
-			width: 300px;
-			height: 200px;
-		}
-		.image_two {
-			position: relative;
-			left: 160px;
-			bottom: 160px;
-		}
-		.image_three {
-			position: relative;
-			left: 40px;
-			bottom: 280px;
-		}
-		.image_one {
-			position: relative;
-			left: 40px;
-			bottom: 40px
-		}
-	}	
+	  height: 200px;
+	  position: relative;
+	}
+	.cake_images .image_show {
+	  width: 300px;
+	  height: 200px;
+	}
+	.cake_images .image_two {
+	  position: relative;
+	  left: 160px;
+	  bottom: 160px;
+	}
+	.cake_images .image_three {
+	  position: relative;
+	  left: 40px;
+	  bottom: 280px;
+	}
+	.cake_images .image_one {
+	  position: relative;
+	  left: 40px;
+	  bottom: 40px;
+	}
 	.image_show_popular {
-		width: 270px;
-		height: 180px;
+	  width: 270px;
+	  height: 180px;
 	}
-}
-.para {
-	margin-bottom: 80px
-}
-@media only screen and (max-width: 400px) {
-	.cake_info {
-		// position: relative;
-		// top: 85px;
-		// padding-bottom: 300px;
-		// p {
-		// 	margin-botpx;
-		// }
-	}
+  }
+  
+  .para {
+	margin-bottom: 80px;
+  }
+  
+  @media only screen and (max-width: 400px) {
 	.cake_images {
-		position: relative;
-		height: 200px;
-		right: 50px;
-		.image_show {
-			width: 300px;
-			height: 200px;
-		}
-		.image_two {
-			position: relative;
-			left: 160px;
-			bottom: 160px;
-		}
-		.image_three {
-			position: relative;
-			left: 40px;
-			bottom: 280px;
-		}
-		.image_one {
-			position: relative;
-			left: 40px;
-			bottom: 40px
-		}
-	}	
+	  position: relative;
+	  height: 200px;
+	  right: 50px;
+	}
+	.cake_images .image_show {
+	  width: 300px;
+	  height: 200px;
+	}
+	.cake_images .image_two {
+	  position: relative;
+	  left: 160px;
+	  bottom: 160px;
+	}
+	.cake_images .image_three {
+	  position: relative;
+	  left: 40px;
+	  bottom: 280px;
+	}
+	.cake_images .image_one {
+	  position: relative;
+	  left: 40px;
+	  bottom: 40px;
+	}
 	.circle {
-		width: 10px;
-		height: 25px;
-		left: 0px;
-		top: 0px;
+	  width: 10px;
+	  height: 25px;
+	  left: 0px;
+	  top: 0px;
 	}
 	.curtain_grid {
-		position: relative;
-		margin: 1px;
-		top: -40px;
-		z-index: -1;
+	  position: relative;
+	  margin: 1px;
+	  top: -40px;
+	  z-index: -1;
 	}
 	.navbar {
-		background-color: $primary-yellow;
+	  background-color: #ffd33a;
 	}
 	.jumbo img {
-		position: relative;
-		bottom: 80px;
-		z-index: -2;
+	  position: relative;
+	  bottom: 80px;
+	  z-index: -2;
 	}
-	
-}
-.testimonials_info {
+  }
+  
+  .product_image {
+	  width: 180px;
+	//   min-height: 150px;
+  }
+  
+  .testimonials_info {
 	text-align: center;
 	padding-top: 40px;
-}
-.testimonials {
+  }
+  
+  .testimonials {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-}
-.slider .testimonial {
-	width: 300px ;
+	-ms-flex-pack: distribute;
+		justify-content: space-around;
+  }
+  
+  .slider .testimonial {
+	width: 300px;
 	height: 450px;
 	margin: auto;
 	padding-top: 40px;
 	margin-left: 20px;
-	background-color: $primary-yellow;
+	background-color: #ffd33a;
 	text-align: center;
 	border-radius: 150px;
-
-	img {
-		border-radius: 50%;
-		margin: auto;
-	}
-	h4 {
-		font-size: 35px;
-		font-family: $cursive-font;
-		margin-top: 30px;
-	}
-	p {
-		font-size: 16px;
-		margin-top: 15px;
-		margin-right: 20px;
-		margin-left: 20px;
-	}
-}
-.product_main {
+  }
+  
+  .slider .testimonial img {
+	border-radius: 50%;
+	margin: auto;
+  }
+  
+  .slider .testimonial h4 {
+	font-size: 35px;
+	font-family: "Pinyon Script", cursive;
+	margin-top: 30px;
+  }
+  
+  .slider .testimonial p {
+	font-size: 16px;
+	margin-top: 15px;
+	margin-right: 20px;
+	margin-left: 20px;
+  }
+  
+  .product_main {
+	  list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-}
-.product {
+	display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */   
+  flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+		justify-content: space-around;
+  }
+  
+  .product {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	margin: 20px 10px 20px 5px;
-	width: 160px;
+	min-width: 180px !important;
+	height: 250px !important;
 	height: auto;
-	box-shadow: .1px .1px 15px rgb(214, 214, 214);
-	.image_show {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	.product_info {
-		margin-top: 12px;
-		padding-left: 10px;
-		font-style: normal;
-	}
-	.product_price {
-		position: relative;
-		bottom: 8px;
-		font-size: 17px;
-		font-family: $normal-font;
-	}
-	.product_name {
-		font-family: $cursive-font;
-		font-size: 25px;
-	}
-}
-
-footer{
-	position: fixed;
+	-webkit-box-shadow: 0.1px 0.1px 15px #d6d6d6;
+			box-shadow: 0.1px 0.1px 15px #d6d6d6;
+  }
+  
+  .product .image_show {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .product .product_info {
+	margin-top: 12px;
+	padding-left: 10px;
+	font-style: normal;
+  }
+  
+  .product .product_price {
+	position: relative;
+	bottom: 8px;
+	font-size: 17px;
+	font-family: "Montserrat", sans-serif;
+  }
+  
+  .product .product_name {
+	font-family: "Pinyon Script", cursive;
+	font-size: 25px;
+  }
+  
+  footer {
+	/* position: fixed; */
 	bottom: 0;
-}
- 
-@media (max-height:800px){
-	footer { position: static; }
-	header { padding-top:40px; }
-}
- 
- 
-.footer-distributed{
+  }
+  
+  @media (max-height: 800px) {
+	footer {
+	  position: static;
+	}
+	header {
+	  padding-top: 40px;
+	}
+  }
+  
+  .footer-distributed {
 	background-color: #2c292f;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
-}
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
-}
- 
-/* Footer left */
- 
-.footer-distributed .footer-left{
+  }
+  
+  /* Footer left */
+  .footer-distributed .footer-left {
 	width: 30%;
-}
- 
-.footer-distributed h3{
-	color:  #ffffff;
+  }
+  
+  .footer-distributed h3 {
+	color: #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
-}
- 
-/* The company logo */
- 
-.footer-distributed .footer-left img{
+  }
+  
+  /* The company logo */
+  .footer-distributed .footer-left img {
 	width: 30%;
-}
- 
-.footer-distributed h3 span{
-	color:  #e0ac1c;
-}
- 
-/* Footer links */
- 
-.footer-distributed .footer-links{
-	color:  #ffffff;
+  }
+  
+  .footer-distributed h3 span {
+	color: #e0ac1c;
+  }
+  
+  /* Footer links */
+  .footer-distributed .footer-links {
+	color: #ffffff;
 	margin: 20px 0 12px;
-}
- 
-.footer-distributed .footer-links a{
-	display:inline-block;
+  }
+  
+  .footer-distributed .footer-links a {
+	display: inline-block;
 	line-height: 1.8;
 	text-decoration: none;
-	color:  inherit;
-}
- 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
+	color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+	color: #8f9296;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
-}
- 
-/* Footer Center */
- 
-.footer-distributed .footer-center{
+  }
+  
+  /* Footer Center */
+  .footer-distributed .footer-center {
 	width: 35%;
-}
- 
- 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
+  }
+  
+  .footer-distributed .footer-center i {
+	background-color: #33383b;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -391,93 +417,224 @@ footer{
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
-}
- 
-.footer-distributed .footer-center i.fa-envelope{
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope {
 	font-size: 17px;
 	line-height: 38px;
-}
- 
-.footer-distributed .footer-center p{
+  }
+  
+  .footer-distributed .footer-center p {
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
-	margin:0;
-}
- 
-.footer-distributed .footer-center p span{
-	display:block;
+	margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+	display: block;
 	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
- 
-.footer-distributed .footer-center p a{
-	color:  #e0ac1c;
-	text-decoration: none;;
-}
- 
- 
-/* Footer Right */
- 
-.footer-distributed .footer-right{
+	font-size: 14px;
+	line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+	color: #e0ac1c;
+	text-decoration: none;
+  }
+  
+  /* Footer Right */
+  .footer-distributed .footer-right {
 	width: 30%;
-}
- 
-.footer-distributed .footer-company-about{
+  }
+  
+  .footer-distributed .footer-company-about {
 	line-height: 20px;
-	color:  #92999f;
+	color: #92999f;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
-}
- 
-.footer-distributed .footer-company-about span{
+  }
+  
+  .footer-distributed .footer-company-about span {
 	display: block;
-	color:  #ffffff;
+	color: #ffffff;
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 20px;
-}
- 
-.footer-distributed .footer-icons{
+  }
+  
+  .footer-distributed .footer-icons {
 	margin-top: 25px;
-}
- 
-.footer-distributed .footer-icons a{
+  }
+  
+  .footer-distributed .footer-icons a {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: #33383b;
 	border-radius: 2px;
- 
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
- 
 	margin-right: 3px;
 	margin-bottom: 5px;
-}
- 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
- 
- 
-@media (max-width: 880px) {
- 
+  }
+  
+  /* Here is the code for Responsive Footer */
+  /* You can remove below code if you don't want Footer to be responsive */
+  @media (max-width: 880px) {
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
+	.footer-distributed .footer-right {
+	  display: block;
+	  width: 100%;
+	  margin-bottom: 40px;
+	  text-align: center;
 	}
- 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
+	.footer-distributed .footer-center i {
+	  margin-left: 0;
 	}
- 
-}
+  }
+  /*-----------------
+  Main Content
+  ------------------*/
+  
+  
+  .main-content{
+  box-sizing: border-box;
+  /* text-align: center; */
+  /* margin: 125px auto 60px; */
+  padding: 0 40px;
+  }
+  
+  /* .main-content h3{
+  font-size: 28px;
+  color:  #5a96b9;
+  padding-bottom: 20px;
+  } */
+  
+  @media (max-width: 600px){
+  
+  .main-content{
+	margin: 45px auto;
+	padding: 0 25px;
+  }
+  
+  }
+  
+  
+  /*-------------------
+  All Products Page
+  --------------------*/
+  
+  /* .all-products h3{
+  opacity: 0;
+  }
+  /* Making the list responsive */
+  
+  
+  
+  /*---------------------------
+  Single Product Page
+  ----------------------------*/
+  
+  .single-product{
+  z-index: 100;
+  }
+  
+  .overlay{
+  height: 0px;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: #f0aeb7;
+  transition: 0.6s;
+  z-index: 100;
+  }
+  
+  .single-product.visible .overlay{
+  height: 100%;
+  }
+  
+  .preview-large{
+  box-sizing: border-box;
+  width: 600px;
+  height: 550px;
+  position: fixed;
+  /* left: 50%; */
+  /* margin-left: 135px; */
+  
+  top: 50%;
+  margin-top: -275px;
+  pointer-events: none;
+  
+  border-radius: 6px;
+  background-color:  #ffffff;
+  
+  z-index: 102;
+  opacity: 0;
+  transition: 0.4s;
+  
+  }
+  
+  .single-product.visible .preview-large{
+  opacity: 1;
+  transition: 1.4s;
+  pointer-events: auto;
+  }
+  
+  .preview-large h3{
+  margin-top: 20px;
+  }
+  
+  .preview-large img{
+  width: 100%;
+  height: 280px;
+  border-bottom: 3px solid #efefef;
+  border-radius: 5px 5px 0 0;
+  }
+  
+  .preview-large p{
+  line-height: 23px;
+  padding: 50px 45px;
+  }
+  
+  .close{
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+  }
+  
+  
+  /*---------------------------
+  Error Page
+  ----------------------------*/
+  
+  .error{
+  opacity: 0;
+  transition: 0.6s;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  }
+  
+  .error.visible{
+  opacity: 1;
+  }
+  
+  .error h3{
+  font-size: 40px;
+  }
+  
+  
