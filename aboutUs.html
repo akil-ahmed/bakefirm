@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head lang="en">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Single Page App Without A Framework</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/c5cd1fd4f0.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Pinyon+Script&display=swap" rel="stylesheet">
@@ -44,50 +44,23 @@
         <div class="curtains_main">
             <div data-type="Group" data-name="" class="curtain_grid">
                 <svg data-type="Ellipse" data-name="Ellipse 7" class="circles">
-                    <ellipse class="circle" rx="10%" ry="20%" cx="29.5" cy="38.5">
+                    <ellipse class="circle" rx="7%" ry="13%" cx="29.5" cy="38.5">
                     </ellipse>
                 </svg>
             </div>
         </div>
-
-        <div class="main-content">
-
-            <div class="all-products page">
-                <ul class="product_main row">
-                    <script id="products-template" type="x-handlebars-template">​
-                        {{#each this}}
-                        <div>
-                            <li class = "product" data-index="{{id}}">
-                                
-                                <div class = "product_image"><a href="#" class="product-photo"><img class = "image_show" src="{{img}}"  alt="{{name}}"/></a></div>
-                                
-                                <div class="product_info">
-                                    <h2 class="product_name">{{name}}</h2>
-                                    <!-- <button>Buy Now!</button> -->
-                                    <p class="product-price">{{price}}$</p>
-                                </div>
-                                <!-- <div class="highlight"></div> -->
-                            </li>
-                        </div>
-                        {{/each}}
-				    </script>
-                </ul>
-
-            </div>
-            <div class="single-product page">
-                <div class="overlay"></div>
-                <div class="preview-large">
-                    <h3>Single product view</h3>
-                    <img src="" />
-                    <p></p>
-                    <span class="close">×</span>
-                </div>
-            </div>
-            <div class="error page">
-                <h3>Sorry, something went wrong :(</h3>
-            </div>
-        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -146,7 +119,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
     <script src="./script/app.js"></script>
-
 
 </body>
 

@@ -47,11 +47,11 @@ body p {
 .curtain_grid {
   opacity: 1;
   position: relative;
-  width: 59px;
+  width: 45px;
   height: 77px;
-  margin: 1px;
   top: -37px;
   z-index: -1;
+  right: 10px;
 }
 
 .circles {
@@ -60,9 +60,7 @@ body p {
 }
 
 .circle {
-  width: 89px;
-  height: 107px;
-  left: 0px;
+  left: 5px;
   top: 0px;
 }
 
@@ -617,5 +615,35 @@ footer {
 
 .error h3 {
   font-size: 40px;
+}
+
+.contact_us_btn {
+  background-color: #ffd33a;
+  outline: none;
+  border: none;
+  color: #2c292f;
+  -webkit-box-shadow: 0.1px 0.1px 10px #ffd33a;
+          box-shadow: 0.1px 0.1px 10px #ffd33a;
+  position: relative;
+  margin-top: 30px;
+  height: 40px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+.form {
+  width: 80%;
+  margin-left: 10%;
+  font-style: normal;
+}
+
+.form .query {
+  height: 100px;
+}
+
+.form input {
+  padding: 20px;
+  border: 2px solid #ffd33a;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=style.css.map */
