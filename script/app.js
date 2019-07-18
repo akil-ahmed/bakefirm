@@ -121,9 +121,9 @@ $(function () {
             data.forEach(function (item) {
                 if (item.id == index) {
                     // Populate '.preview-large' with the chosen product's data.
-                    container.find('h3').text(item.name);
+                    container.find('h4').text(item.name);
                     container.find('img').attr('src', item.img);
-                    container.find('p').text(item.price);
+                    container.find('p').text("Price: " + item.price + "Rs");
                 }
             });
         }

@@ -232,11 +232,6 @@ body p {
     text-align: center;
     height: 250px;
     right: 30px;
-    top: 80px;
-  }
-  .product_main {
-    position: relative;
-    right: 10px;
   }
   .cake_images .image_two {
     position: relative;
@@ -291,34 +286,21 @@ body p {
   }
   .popular .popular_product {
     text-align: center;
+    width: 160px;
     margin: auto;
-    position: relative;
-    right: 15px;
   }
   .popular .image_show_popular_div {
-    width: 160px;
+    width: 120px;
     height: 90px;
   }
   .popular .image_show_popular {
-    height: 110px;
+    height: 90px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .popular .popular_name {
     font-size: 24px;
-  }
-  .popular .popular_info {
-    text-align: center;
-    width: 160px;
-    margin: auto;
-  }
-  .cake_info p {
-    position: relative;
-    margin-top: 0px;
-    padding: 0px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
   }
 }
 
@@ -359,7 +341,6 @@ body p {
 }
 
 .slider .testimonial p {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-top: 15px;
   margin-right: 20px;
@@ -596,6 +577,7 @@ footer {
 @media (max-width: 600px) {
   .main-content {
     margin: 45px auto;
+    padding: 0 25px;
   }
 }
 
@@ -605,11 +587,6 @@ footer {
 .single-product {
   z-index: 100;
   text-align: center;
-}
-
-.single-product p {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
 }
 
 .overlay {
@@ -674,9 +651,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-  .product-price {
-    font-family: "Montserrat", sans-serif;
-  }
   .preview-large {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;

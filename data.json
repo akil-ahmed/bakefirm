@@ -10,43 +10,43 @@
         {
             "id": 2,
             "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 1200
+            "name": "Butterscotch Crown",
+            "img": "./images/butterscotchCrown.jpeg",
+            "price": 400
         },
         {
             "id": 3,
             "category": "cake",
-            "name": "Chocolate",
-            "img": "./images/product_image.jpeg",
+            "name": "Crazy Mango",
+            "img": "./images/crazyMango.jpeg",
             "price": 1300
         },
         {
             "id": 4,
-            "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
+            "category": "snacks",
+            "name": "Burger",
+            "img": "./images/burger.jpeg",
             "price": 1200
         },
         {
             "id": 5,
             "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 1200
-        },
-        {
-            "id": 6,
-            "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
+            "name": "Pure Chocolate",
+            "img": "./images/pureChocolate.jpeg",
             "price": 1200
         },
         {
             "id": 7,
             "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
+            "name": "3-tier Pineapple",
+            "img": "./images/3-tierPineapple.jpeg",
+            "price": 1200
+        },
+        {
+            "id": 7,
+            "category": "snacks",
+            "name": "Crazy Cookies",
+            "img": "./images/crazyCookies.jpeg",
             "price": 1200
         },
         {
