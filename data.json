@@ -5,7 +5,7 @@
             "category": "cake",
             "img": "./images/product_image.jpeg",
             "name": "Chocolate Cake",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 2,
@@ -19,70 +19,70 @@
             "category": "cake",
             "name": "Crazy Mango",
             "img": "./images/crazyMango.jpeg",
-            "price": 1300
+            "price": 400
         },
         {
             "id": 4,
             "category": "snacks",
             "name": "Burger",
             "img": "./images/burger.jpeg",
-            "price": 1200
+            "price": 100
         },
         {
             "id": 5,
             "category": "cake",
             "name": "Pure Chocolate",
             "img": "./images/pureChocolate.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
-            "id": 7,
+            "id": 6,
             "category": "cake",
             "name": "3-tier Pineapple",
             "img": "./images/3-tierPineapple.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 7,
             "category": "snacks",
             "name": "Crazy Cookies",
             "img": "./images/crazyCookies.jpeg",
-            "price": 1200
+            "price": 100
         },
         {
             "id": 8,
             "category": "cake",
             "name": "Chocolate Cake",
             "img": "./images/product_image.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 9,
             "category": "cake",
             "name": "Chocolate Cake",
             "img": "./images/product_image.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 10,
             "category": "cake",
             "name": "Chocolate Cake",
             "img": "./images/product_image.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 11,
             "category": "cake",
             "name": "Chocolate Cake",
             "img": "./images/product_image.jpeg",
-            "price": 1200
+            "price": 400
         },
         {
             "id": 12,
             "category": "cake",
             "name": "Chocolate Cake",
             "img": "./images/product_image.jpeg",
-            "price": 1200
+            "price": 400
         }
     ]
 }
