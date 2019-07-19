@@ -849,17 +849,18 @@ body {
 	}
 
 	.members {
-		margin-left: 5%;
-		margin-right: 5%;
+		margin: auto;
+		
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
+		max-width: 700px;
+		
 		.member {
-			width: 25%;
+			margin: auto;
+			// width: 25%;
 			.team_image {
-				height: 280px;
 			width: 100%;
-			// margin: 0;
-			// padding: 0;
 			object-fit: cover;
 			}
 		}

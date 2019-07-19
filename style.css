@@ -813,21 +813,22 @@ footer {
 }
 
 .members {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-width: 700px;
 }
 
 .members .member {
-  width: 25%;
+  margin: auto;
 }
 
 .members .member .team_image {
-  height: 280px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
