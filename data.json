@@ -51,38 +51,66 @@
         },
         {
             "id": 8,
-            "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 400
+            "category": "Chocolate",
+            "name": "Chocolate Brownie",
+            "img": "./images/chocolateBrownies.jpeg",
+            "price": 20
         },
         {
             "id": 9,
-            "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 400
+            "category": "Chocolate",
+            "name": "Mendiants",
+            "img": "./images/mendiants.jpeg",
+            "price": 20
         },
         {
             "id": 10,
-            "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 400
+            "category": "snacks",
+            "name": "Chicken Patties",
+            "img": "./images/chickenPraties.jpeg",
+            "price": 40
         },
         {
             "id": 11,
             "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
-            "price": 400
+            "name": "Fruit Cake",
+            "img": "./images/fruitCake.jpeg",
+            "price": 300
         },
         {
             "id": 12,
+            "category": "Ice Cream",
+            "name": "Homemade gilleto icecream",
+            "img": "./images/homemadeGilletoIcecream.jpeg",
+            "price": 30
+        },
+        {
+            "id": 13,
             "category": "cake",
-            "name": "Chocolate Cake",
-            "img": "./images/product_image.jpeg",
+            "name": "Pure Chocolate",
+            "img": "./images/pureChocolate2.jpeg",
             "price": 400
+        },
+        {
+            "id": 14,
+            "category": "cake",
+            "name": "Black Forrest",
+            "img": "./images/blackForrest.jpeg",
+            "price": 370
+        },
+        {
+            "id": 15,
+            "category": "cake",
+            "name": "Pure Chocolate",
+            "img": "./images/pureChocolate3.jpeg",
+            "price": 400
+        },
+        {
+            "id": 16,
+            "category": "cake",
+            "name": "Jems Cake",
+            "img": "./images/jemsCake.jpeg",
+            "price": 500
         }
     ]
 }
