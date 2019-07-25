@@ -19,14 +19,14 @@
             "category": "cake",
             "name": "Crazy Mango",
             "img": "./images/crazyMango.jpeg",
-            "price": 400
+            "price": 380
         },
         {
             "id": 4,
             "category": "snacks",
             "name": "Burger",
             "img": "./images/burger.jpeg",
-            "price": 100
+            "price": 40
         },
         {
             "id": 5,
@@ -40,14 +40,14 @@
             "category": "cake",
             "name": "3-tier Pineapple",
             "img": "./images/3-tierPineapple.jpeg",
-            "price": 400
+            "price": 2000
         },
         {
             "id": 7,
             "category": "snacks",
             "name": "Crazy Cookies",
             "img": "./images/crazyCookies.jpeg",
-            "price": 100
+            "price": 20
         },
         {
             "id": 8,
