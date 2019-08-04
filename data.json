@@ -111,6 +111,13 @@
             "name": "Jems Cake",
             "img": "./images/jemsCake.jpeg",
             "price": 500
+        },
+        {
+            "id": 17,
+            "category": "cake",
+            "name": "Rasmalai Cake",
+            "img": "./images/rasmalai-cake.jpeg",
+            "price": 500
         }
     ]
 }
